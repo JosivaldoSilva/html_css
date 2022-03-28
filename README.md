@@ -4,4 +4,4 @@
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 
-<a hef="https://josivaldosilva.github.io/html_css/exercicios/ex018/pseudoclasse.html">Executar o exercicio 018</a>
+<a href="https://josivaldosilva.github.io/html_css/exercicios/ex018/pseudoclasse.html">Executar o exercicio 018</a>
