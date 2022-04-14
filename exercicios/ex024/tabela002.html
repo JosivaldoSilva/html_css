@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD (TAble head / cabeça da tabela) 
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+        
+    scope
+    efeito zebrado-->
+
+    <table>
+        <caption>Províncias de Angola</caption>
+        <thead>
+            <tr>
+                <th scope="col">Província</th>
+                <th scope="col">Código ISO</th>
+                <th scope="col">Capital</th>
+                <th scope="col">Área (km<sup>2</sup>)</th>
+                <th scope="col">População (Censo 2014)</th> 
+                <th scope="col">Municípios</th>
+                <th scope="col">Comunas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bengo</td>
+                <td class="iso">BGO</td>
+                <td>Caxito</td>
+                <td class="num">15 506	</td>
+                <td class="num">356 641</td>
+                <td class="num">6</td>
+                <td class="num">23</td> 
+            </tr>
+            <tr>
+                <td>Benguela</td>
+                <td class="iso">BGU</td>
+                <td>Benguela</td>
+                <td class="num">31</td>
+                <td class="num">2 231 385</td>
+                <td class="num">10</td>
+                <td class="num">38</td>
+            </tr>
+            <tr>
+                <td>Bié</td>
+                <td class="iso">BIE</td>
+                <td>Cuito</td>
+                <td class="num">70 314</td>
+                <td class="num">1 455 255</td>
+                <td class="num">9</td>
+                <td class="num">39</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td class="iso">CAB</td>
+                <td>Cabinda</td>
+                <td class="num">7 270</td>
+                <td class="num">716 076</td>
+                <td class="num">4</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+                <td>Cuando-Cubango</td>
+                <td class="iso">CCU</td>
+                <td>Menongue</td>
+                <td class="num">199 049</td>
+                <td class="num">534 002</td>
+                <td class="num">9 </td>
+                <td class="num">30</td>
+            </tr>
+            <tr>
+                <td>Cuanza Norte</td>
+                <td class="iso">CNO</td>
+                <td>N´dalatando</td>
+                <td class="num">24 190</td>
+                <td class="num">443 386	</td>
+                <td class="num">10</td>
+                <td class="num">30</td>
+            </tr>
+            <tr>
+                <td>Cuanza Sul</td>
+                <td class="iso">CUS</td>
+                <td>Sumbe</td>
+                <td class="num">55 660</td>
+                <td class="num">1 881 873</td>
+                <td class="num">12</td>
+                <td class="num">36</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td class="iso">CNN</td>
+                <td>Ondjiva</td>
+                <td class="num">89 342</td>
+                <td class="num">990 087	</td>
+                <td class="num">6</td>
+                <td class="num">20</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td class="iso">HUA</td>
+                <td>Huambo</td>
+                <td class="num">34 274	</td>
+                <td class="num">2 019 555</td>
+                <td class="num">11</td>
+                <td class="num">37</td>
+            </tr>
+            <tr>
+                <td>Huíla</td>
+                <td class="iso">HUI</td>
+                <td>Lubango</td>
+                <td class="num">75 002</td>
+                <td class="num">2 497 422</td>
+                <td class="num">14</td>
+                <td class="num">37</td>
+            </tr>
+            <tr>
+                <td>Luanda</td>
+                <td class="iso">LUA</td>
+                <td>Luanda</td>
+                <td class="num">18 283</td>
+                <td class="num">6 945 386</td>
+                <td class="num">9</td>
+                <td class="num">14</td>
+            </tr>
+            <tr>
+                <td>Lunda Norte</td>
+                <td class="iso">LNO</td>
+                <td>Dundo</td>
+                <td class="num">102 783	</td>
+                <td class="num">862 566	</td>
+                <td class="num">10</td>
+                <td class="num">24</td>
+            </tr>
+            <tr>
+                <td>Lunda Sul</td>
+                <td class="iso">LSU</td>
+                <td>Saurimo</td>
+                <td class="num">45 649</td>
+                <td class="num">537 587</td>
+                <td class="num">4</td>
+                <td class="num">14</td>
+            </tr>
+            <tr>
+                <td>Mlanje</td>
+                <td class="iso">MAL</td>
+                <td>Malanje</td>
+                <td class="num">97 602</td>
+                <td class="num">986 363</td>
+                <td class="num">14</td>
+                <td class="num">52</td>
+            </tr>
+            <tr>
+                <td>Moxico</td>
+                <td class="iso">MOX</td>
+                <td>Luena</td>
+                <td class="num">223 023</td>
+                <td class="num">758 568</td>
+                <td class="num">9</td>
+                <td class="num">27</td>
+            </tr>
+            <tr>
+                <td>Namibe</td>
+                <td class="iso">NAM</td>
+                <td>Moçâmedes</td>
+                <td class="num">58 137</td>
+                <td class="num">495 326</td>
+                <td class="num">5</td>
+                <td class="num">16</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td class="iso">UIG</td>
+                <td>Uíge</td>
+                <td class="num">58 698</td>
+                <td class="num">1 483 118</td>
+                <td class="num">16</td>
+                <td class="num">44</td>
+            </tr>
+            <tr>
+                
+                <td>Zaire</td>
+                <td class="iso">ZAI</td>
+                <td>Mbanza Congo</td>
+                <td class="num">40 130</td>
+                <td class="num">594 428</td>
+                <td class="num">6</td>
+                <td class="num">25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="iso"><strong>AO</strong></td>
+                <td><strong>Luanda</strong></td>
+                <td class="num"><strong>1 246 700</strong></td>
+                <td class="num"><strong>25 789 024</strong></td>
+                <td class="num"><strong>164</strong></td>
+                <td class="num"><strong>518</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
