@@ -11,6 +11,7 @@ caption {
 }
 
 table {
+    position: relative;
     border-collapse: collapse;
     margin: auto;
 
@@ -30,11 +31,16 @@ thead,tfoot {
     color: white;
 }
 
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: rgba(39, 37, 37, 0.993);
+}
 
 td.num {
     text-align: right;
 }
 
-td.iso {
+td.iso-code {
     text-align: center;
 }
