@@ -14,7 +14,6 @@ table {
     position: relative;
     border-collapse: collapse;
     margin: auto;
-
 }
 
 tbody > tr:nth-child(2n) { /*2n-1, odd, even*/
