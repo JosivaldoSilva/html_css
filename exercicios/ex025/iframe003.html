@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no Iframe </title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        iframe {
+            width: 90%;
+            height: 450px;
+            border: 2px solid #222;
+            
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius nisi numquam id doloremque, quod nihil temporibus veniam nulla, quo maiores minus iure fuga ipsum dolores natus cupiditate. Autem, ratione?</p>
+
+    <ul>
+        <li><a href="pagsExtras/primeiraPag.html" target="changeContent">Primeira página</a></li>
+        <li><a href="pagsExtras/segundaPag.html" target="changeContent">Segunda página</a></li>
+        <li><a href="pagsExtras/terceiraPag.html" target="changeContent">Terceira página</a></li>
+    </ul>
+
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius nisi numquam id doloremque, quod nihil temporibus veniam nulla, quo maiores minus iure fuga ipsum dolores natus cupiditate. Autem, ratione?</p> <img src='pagsExtras/imagens/eu.jpg' >" name="changeContent">
+        <p> Infelismente o seu navegador não é compactivel</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quas asperiores voluptatum quod possimus maiores quidem doloribus necessitatibus, aperiam nulla sint ipsum iusto eaque deserunt! Alias quaerat porro distinctio cum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi maxime vitae id perspiciatis sit architecto eveniet, aut asperiores tempora illum iure praesentium aliquam. Praesentium et recusandae quos, incidunt illo hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis enim, dolorem voluptatibus nihil in corrupti ratione placeat porro quam ducimus provident eligendi cumque. Eos quia nesciunt iure numquam. Atque!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quas asperiores voluptatum quod possimus maiores quidem doloribus necessitatibus, aperiam nulla sint ipsum iusto eaque deserunt! Alias quaerat porro distinctio cum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi maxime vitae id perspiciatis sit architecto eveniet, aut asperiores tempora illum iure praesentium aliquam. Praesentium et recusandae quos, incidunt illo hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis enim, dolorem voluptatibus nihil in corrupti ratione placeat porro quam ducimus provident eligendi cumque. Eos quia nesciunt iure numquam. Atque!</p>
+</body>
+</html>
