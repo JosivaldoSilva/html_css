@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 50px 0;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;   
+}
+
+.item {
+    background-color: tomato;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*1*/
+.nowrap {
+    display: flex;
+    flex-wrap: nowrap; /*Não quebrar linha - Padrão*/
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*2*/
+.wrap {
+    display: flex;
+    flex-wrap: wrap; /*Quebrar linha*/
+    max-width: 400px;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+
+/*3*/
+.wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    max-width: 400px;
+    border: 1px solid #ccc;
+}

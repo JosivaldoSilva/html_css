@@ -15,10 +15,13 @@
 <body>
      
     <h1>Meu primeiro formulário</h1>
-    <form autocomplete="off" action="cadastro.php">
+    <form autocomplete="off" method="post" action="cadastro.php"> <!--Method GEt  e Post para formulários-->
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" required></p> 
-        <p><input type="submit" value="Enviar"></p>
+       
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="safePassword"> 
+        <p> <input type="submit" value="Enviar"></p>
     </form>
 
 </body>

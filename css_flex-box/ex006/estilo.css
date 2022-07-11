@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 50px 0;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;   
+}
+
+.item {
+    background-color: tomato;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*1*/
+.stretch {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+/*2*/
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+/*3*/
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+/*4*/
+.center {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+/*5*/
+.baseline {
+    display: flex;
+    align-items: baseline;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+/*Propriedade align-items em itens alinhados em formato de coluna*/
+
+/*1*/
+.stretch-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+/*2*/
+.flex-start-column {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+/*3*/
+.flex-end-column {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+/*4*/
+.center-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+/*5*/
+.baseline-column {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 150px;
+}

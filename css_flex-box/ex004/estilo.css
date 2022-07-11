@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 50px 0;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;   
+}
+
+.item {
+    background-color: tomato;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*1*/
+.column {
+    display: flex;
+    flex-flow: column;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*2*/
+.column-reverse {
+    display: flex;
+    flex-flow: column-reverse;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*3*/
+.nowrap {
+    display: flex;
+    flex-flow: nowrap;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*4*/
+.row {
+    display: flex;
+    flex-flow: row;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*5*/
+.row-reverse {
+    display: flex;
+    flex-flow: row-reverse;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*6*/
+.wrap {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/*7*/
+.wrap-reverse {
+    display: flex;
+    flex-flow: wrap-reverse;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+
