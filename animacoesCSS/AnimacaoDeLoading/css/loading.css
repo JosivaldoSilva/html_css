@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transform: scale(1 );
+}
+
+#c-loader {
+    height: 50px;
+    width: 50px;
+    border: 6px solid #e5e5e5;
+    border-top-color: aqua;
+    animation: is-rotating 1s infinite;
+    border-radius: 50%;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
