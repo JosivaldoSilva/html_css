@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 150%;
+    font-family: sans-serif;
+}
+
+.text-reveal {
+    overflow: hidden;
+    position: relative;  
+}
+
+h1 {
+    animation: fade 1ms 1s forwards;
+    opacity: 0;
+}
+
+.text-reveal::after {
+    background-color: #157bad;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.13, 1) forwards;
+}
+
+@keyframes text-reveal {
+    from {
+        transform: translateX(-101%);
+    }
+
+    to {
+        transform: translateX(101%);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
