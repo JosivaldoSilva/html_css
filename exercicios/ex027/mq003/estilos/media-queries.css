@@ -2,6 +2,95 @@
 
 /* Todas as demias midias */
 
+/* Typical Device Breakpoints 
+1 - Pequenas telas: Até 600px
+2 - Celular: 600px até 768px
+3 - Tablet: 768px até 992px
+4 - Desktop´s: 992px até 1200px
+5 - Telas grandes: Acima de 1200px
+*/ 
+
 @media print {
+    * {
+        font-weight: normal; 
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    img#print {
+        display: block;
+        margin: auto;
+    }
+    img#phone {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 2em;
+        text-shadow: none;
+       
+     }
+     main {
+        outline: 2px solid black;
+        width: 700px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    main::after {
+        content: 'Contéudo imprimido através do site www.quintascode.com';
+
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:992px)  {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+   
+    img#tablet {
+        display: block;
+        margin: auto;
+    }
     
+    img#phone {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:992px) and (max-width:1200px)  {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+   
+    img#pc {
+        display: block;
+        margin: auto;
+    }
+    
+    img#phone, img#phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+   
+    img#tv {
+        display: block;
+        margin: auto;
+    }
+    
+    img#phone, img#phone, img#pc{
+        display: none;
+    }
+
 }
