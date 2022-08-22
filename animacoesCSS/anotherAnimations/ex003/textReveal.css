@@ -25,7 +25,7 @@ h1 {
     left: 0;
     right: 0;
     top: 0;
-    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.13, 1) forwards;
+    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.13, 1) infinite;
 }
 
 @keyframes text-reveal {
