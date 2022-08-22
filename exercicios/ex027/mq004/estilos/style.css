@@ -31,8 +31,9 @@ body {
 }
 
 .c-items {
-    display: flex;
+    display: block;
     list-style: none;
+    text-align: center;
 }
 
 .c-items li {
