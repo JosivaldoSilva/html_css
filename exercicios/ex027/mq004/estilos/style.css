@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 }
 
-body, html {
+body {
     height: 100vh;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,11 +32,11 @@ body {
 
 nav {
     text-align: center;
+    width: 100vw;
 }
 
 
 #burguer-menu {
-    margin-right: 5px;
     background-color:rgb(48, 48, 48);
     border-top: 2px solid gray;
     display: none;
@@ -52,20 +52,20 @@ nav {
     background-color: #ffffff;
 }
 
-.c-items li {
-    margin-right: 5px;
-    background-color:rgb(87, 87, 87);
-    border-top: 2px solid gray;
-}
-.c-items li:hover {
-    background-color: gray;
-}
 
-.c-items li a {
+.c-items a {
     display: block;
     color: white;
     padding: 10px;
     font-weight: 500;
+    background-color:rgb(87, 87, 87);
+    width: 100%;
+    border-top: 2px solid gray;
+    margin-right: 5px;
+}
+
+.c-items a:hover {
+    background-color: gray;
 }
 
 .c-content {
@@ -92,6 +92,7 @@ nav {
 
 nav.active {
     display: block;
+    margin-right: 0;
 }
 
 
@@ -99,6 +100,11 @@ nav.active {
     .c-menu {
         display: none;
     }
+
+    .c-menu li {
+        margin-right: 0;
+    }
+
     #burguer-menu {
         display: block;
     }
