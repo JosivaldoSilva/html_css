@@ -30,10 +30,26 @@ body {
     padding: 10px;
 }
 
-.c-items {
-    display: block;
-    list-style: none;
+nav {
     text-align: center;
+}
+
+
+#burguer-menu {
+    margin-right: 5px;
+    background-color:rgb(48, 48, 48);
+    border-top: 2px solid gray;
+    display: none;
+    padding: 5px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+#burguer-menu:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
 }
 
 .c-items li {
@@ -44,7 +60,6 @@ body {
 .c-items li:hover {
     background-color: gray;
 }
-
 
 .c-items li a {
     display: block;
@@ -61,6 +76,7 @@ body {
     border-radius: 12px;
     width: 90%;
     text-align: justify;
+    cursor: pointer;
 }
 
 .c-content h2 {
@@ -73,3 +89,60 @@ body {
     margin-bottom: 15px;
     text-indent: 20px;
 }
+
+nav.active {
+    display: block;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .c-menu {
+        display: none;
+    }
+    #burguer-menu {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width: 600px) {
+    .c-menu {
+        display: none;
+    }
+    #burguer-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 768px) {
+    .c-menu {
+        display: none;
+    }
+    #burguer-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .c-items {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .c-items {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .c-items {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+
+
