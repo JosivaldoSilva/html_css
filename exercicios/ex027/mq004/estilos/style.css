@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 }
 
-body {
+body, html {
     height: 100vh;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,16 +30,15 @@ body {
     padding: 10px;
 }
 
-nav {
+nav.c-menu {
     text-align: center;
-    width: 100vw;
+    background-color: rgb(87, 87, 87);
 }
-
 
 #burguer-menu {
     background-color:rgb(48, 48, 48);
     border-top: 2px solid gray;
-    display: none;
+    display: block;
     padding: 5px;
     font-size: 2em;
     color: white;
@@ -52,16 +51,15 @@ nav {
     background-color: #ffffff;
 }
 
+.c-items{
+    list-style-type: none;
+}
 
 .c-items a {
     display: block;
-    color: white;
     padding: 10px;
-    font-weight: 500;
-    background-color:rgb(87, 87, 87);
-    width: 100%;
+    color: white;
     border-top: 2px solid gray;
-    margin-right: 5px;
 }
 
 .c-items a:hover {
@@ -90,65 +88,34 @@ nav {
     text-indent: 20px;
 }
 
-nav.active {
-    display: block;
-    margin-right: 0;
+ul.active {
+    display:none;
 }
 
-
-@media screen and (min-width: 320px) and (max-width:480px) {
-    .c-menu {
+@media screen and (min-width: 768px) {
+    #burguer-menu {
         display: none;
     }
 
-    .c-menu li {
-        margin-right: 0;
+    nav.c-menu {
+        text-align: left;
+        background-color: #949494;
     }
 
-    #burguer-menu {
-        display: block;
-    }
-}
-
-
-@media screen and (min-width:480px) and (max-width: 600px) {
-    .c-menu {
-        display: none;
-    }
-    #burguer-menu {
-        display: block;
-    }
-}
-
-@media screen and (min-width:600px) and (max-width: 768px) {
-    .c-menu {
-        display: none;
-    }
-    #burguer-menu {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
     .c-items {
         display: flex;
-        list-style-type: none;
     }
-}
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .c-items {
+    .c-items a {
+        margin-right: 10px;
+        background-color: rgb(87, 87, 87);
+    }
+
+    ul.active {
         display: flex;
-        list-style-type: none;
+    }
+
+    .c-content {
+        width: 768px;
     }
 }
-
-@media screen and (min-width: 1200px) {
-    .c-items {
-        display: flex;
-        list-style-type: none;
-    }
-}
-
-
-
